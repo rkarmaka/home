@@ -402,10 +402,44 @@ p {
     background: #f9f7f5;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease-in-out, box-shadow 0.3s;
     margin: 5px 0 5px 0;
 }
+
+/* .project-card {
+    background: #f9f7f5;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+    margin: 5px 0;
+    overflow: hidden;
+    text-align: center;
+} */
+
+.project-card img {
+    width: calc(100% + 40px);
+    height: auto;
+    margin: -20px -20px 10px -20px;
+    display: block;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.project-card .project-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.project-card .project-description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #333;
+}
+
 
 /* Meta Section inside Cards */
 .meta {
@@ -570,3 +604,96 @@ hr {
     font-size: 0.9rem;
     color: #555;
 } */
+
+
+.teaching-card {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    background: #f9f7f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.teaching-card img {
+    height: calc(100% + 40px); /* Full height */
+    width: auto; /* Adjust width proportionally */
+    max-width: 25%; /* Prevent excessive width */
+    object-fit: cover; /* Ensure it fills the space properly */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: -20px 0 -20px -20px; /* Adjust margin */
+}
+
+/* Content on the right side */
+.teaching-card .teaching-content {
+    flex: 1; /* Takes remaining space */
+    padding-left: 20px; /* Space between image and text */
+    text-align: left;
+}
+
+.teaching-card .teaching-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.teaching-card .teaching-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+
+/* Blog Card */
+.blog-card {
+    display: flex;
+    align-items: center; /* Align content vertically */
+    background: #f9f7f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.blog-card img {
+    height: 100%; /* Full height */
+    width: auto; /* Adjust width proportionally */
+    max-width: 15%; /* Prevent excessive width */
+    object-fit: cover; /* Ensure it fills the space properly */
+    /* border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; */
+    border-radius: 12px;
+}
+
+/* Content on the right side */
+.blog-card .blog-content {
+    flex: 1; /* Takes remaining space */
+    padding-left: 20px; /* Space between image and text */
+    text-align: left;
+}
+
+.blog-card .blog-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.blog-card .blog-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.blog-card .blog-date {
+    font-size: 0.75rem;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
