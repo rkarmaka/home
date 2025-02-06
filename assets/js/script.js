@@ -1,3 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Two-column layout loaded successfully!");
-});
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
