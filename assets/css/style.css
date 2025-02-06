@@ -15,7 +15,7 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #A51C30;
+    --bs-primary: #8d2c2c;
     --bs-secondary: #000;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -42,7 +42,7 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #000;
+    --bs-body-color: #7a6f80;
     --bs-body-bg: #e6e2df;
     --bs-body-bg-opacity: rgba(255, 255, 255, 1);
     --bs-border-width: 0.125rem;
@@ -169,6 +169,7 @@ body {
     background-color: var(--bs-body-bg);
     display: flex;
     justify-content: center;
+    color: var(--bs-body-color);
 }
 
 /* General Texts */
@@ -194,14 +195,14 @@ h4 {
 }
 
 p {
-    color: #555;
+    /* color: #555; */
     font-size: 0.9rem;
     line-height: 1.5;
     margin-top: 5px;   
 }
 
 .quote {
-    color: #555;
+    /* color: #555; */
     font-size: 1.5rem;
     /* line-height: 1.5; */
     margin-top: 5px;
@@ -212,7 +213,7 @@ p {
 }
 
 .quote-author {
-    color: #555;
+    /* color: #555; */
     font-size: .75rem;
     /* line-height: 1.5; */
     margin-top: 5px;
@@ -314,7 +315,7 @@ p {
 }
 
 .card .social-icons {
-    color: #555;
+    color: var(--bs-body-color);
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -431,13 +432,13 @@ p {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
-    color: #333;
+    color: var(--bs-body-color);
 }
 
 .project-card .project-description {
     font-size: 0.9rem;
     margin-top: 10px;
-    color: #333;
+    color: var(--bs-body-color);
 }
 
 
@@ -447,7 +448,7 @@ p {
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    color: #555;
+    color: var(--bs-body-color);
 }
 
 /* Language Tags */
@@ -506,7 +507,7 @@ hr {
 .logo {
     font-size: 22px;
     font-weight: bold;
-    color: #333;
+    color: var(--bs-body-color);
 }
 
 .nav-links {
@@ -521,14 +522,14 @@ hr {
 
 .nav-links a {
     text-decoration: none;
-    color: #555;
+    color: var(--bs-body-color);
     font-weight: 500;
     padding: 8px 12px;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #2c698d; /* Highlight color */
+    color: var(--bs-primary); /* Highlight color */
 }
 
 
@@ -605,6 +606,18 @@ hr {
     color: #555;
 } */
 
+.teaching {
+    background: var(--bs-body-color);
+    color: var(--bs-body-bg);
+    /* border-color: var(--bs-primary); */
+    /* border-style: solid; */
+    /* border-width: 1px; */
+}
+
+.teaching a {
+    color: var(--bs-body-bg);
+    text-decoration: none;
+}
 
 .teaching-card {
     display: flex;
@@ -638,12 +651,10 @@ hr {
 .teaching-card .teaching-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
 }
 
 .teaching-card .teaching-description {
     font-size: 0.9rem;
-    color: #555;
     margin-top: 5px;
 }
 
