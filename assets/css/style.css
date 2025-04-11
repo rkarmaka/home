@@ -462,3 +462,28 @@ body,
 .social-icons a:hover {
   color: var(--bs-primary); /* Bootstrap primary color */
 }
+
+
+/* PROFILE CARD WITH COVER + PHOTO */
+.level-1 {
+  position: relative; /* enable child absolute positioning */
+  overflow: hidden;
+}
+
+.simple-cover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.level-1 img.rounded-circle {
+  position: relative;
+  z-index: 1; /* brings profile photo above cover */
+  margin-top: 25px; /* pushes it visually into the right place */
+}
