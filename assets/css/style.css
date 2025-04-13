@@ -215,6 +215,19 @@ body,
   border-radius: 16px;
 }
 
+.level-3 img {
+  object-fit: contain;
+  max-width: 10rem;
+  height: auto;
+  border-radius: 0px;
+}
+
+
+.workshop-location {
+  font-size: 0.9rem;
+  color: var(--bs-secondary);
+  font-style: italic;
+}
 
 
 /* LEVEL 4: Optional nested items (e.g., quotes, highlights) */
