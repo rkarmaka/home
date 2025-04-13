@@ -20,3 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+const cards = document.querySelectorAll('.testimonial-card');
+let current = 0;
+
+function showNextTestimonial() {
+  cards[current].classList.remove('active');
+  current = (current + 1) % cards.length;
+  cards[current].classList.add('active');
+}
+
+setInterval(showNextTestimonial, 5000); // change every 5 seconds
+
