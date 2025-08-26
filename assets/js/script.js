@@ -24,18 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Testimonial slider functionality
-// This assumes you have a set of testimonial cards with the class 'testimonial-card'
-// and a parent container with the class 'testimonial-slider'
 const cards = document.querySelectorAll('.testimonial-card');
-let current = 0;
-
-function showNextTestimonial() {
-  cards[current].classList.remove('active');
-  current = (current + 1) % cards.length;
-  cards[current].classList.add('active');
+if (cards.length) {
+  let current = 0;
+  setInterval(()=>{
+    cards[current].classList.remove('active');
+    current = (current + 1) % cards.length;
+    cards[current].classList.add('active');
+  }, 5000);
 }
-
-setInterval(showNextTestimonial, 5000); // change every 5 seconds
 
 
 
@@ -58,4 +55,45 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+});
+
+
+// Cycle themes: light → dark → warm → neutral
+const themes = ["light", "dark", "warm", "neutral", "seedling"];
+let current = 0;
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem("theme", theme);
+
+  // Update icon based on theme
+  const icon = document.getElementById("theme-icon");
+  if (!icon) return;
+
+  if (theme === "dark") {
+    icon.className = "fas fa-moon"; // moon icon for dark
+  } else if (theme === "warm") {
+    icon.className = "fas fa-earth-americas"; // earthy
+  } else if (theme === "neutral") {
+    icon.className = "fas fa-adjust"; // minimal neutral
+  } else if (theme === "seedling") {
+    icon.className = "fas fa-seedling"; // seedling
+  } else {
+    icon.className = "fas fa-sun"; // default light
+  }
+}
+
+function toggleTheme() {
+  current = (current + 1) % themes.length;
+  setTheme(themes[current]);
+}
+
+// Initialize on load
+document.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("theme") || "light";
+  current = themes.indexOf(saved) >= 0 ? themes.indexOf(saved) : 0;
+  setTheme(themes[current]);
+
+  const toggleBtn = document.getElementById("theme-toggle");
+  if (toggleBtn) toggleBtn.addEventListener("click", toggleTheme);
 });
