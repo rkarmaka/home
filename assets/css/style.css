@@ -126,10 +126,6 @@
 
   --bs-tag: #3b82f6;
   --bs-tag-color: #ffffff;
-
-  --bs-navbar-bg: var(--bs-body-bg);
-  --bs-navbar-color: #1e293b;      /* dark gray/blue */
-  --bs-navbar-hover: #3b82f6;
 }
 
 /* DARK (Deep Modern) */
@@ -202,26 +198,38 @@
   --bs-tag-color: #ffffff;
 }
 
-
 /* base (light) already ok via :root */
+
+/* Light */
+[data-theme="light"] .navbar {
+  --bs-navbar-bg: var(--bs-body-bg);
+  --bs-navbar-color: #1e293b;
+  --bs-navbar-hover-color: #3b82f6;
+}
+
+
 /* Dark */
 [data-theme="dark"] .navbar {
+  --bs-navbar-bg: var(--bs-body-bg);
   --bs-navbar-color: #e5e7eb;
   --bs-navbar-hover-color: #60a5fa;
 }
 /* Warm */
 [data-theme="warm"] .navbar {
+  --bs-navbar-bg: var(--bs-body-bg);
   --bs-navbar-color: #2e2a26;
   --bs-navbar-hover-color: #ff8552;
 }
 /* Neutral */
 [data-theme="neutral"] .navbar {
+  --bs-navbar-bg: var(--bs-body-bg);
   --bs-navbar-color: #212529;
   --bs-navbar-hover-color: #5c7cfa;
 }
 
 /* SEEDLING */
 [data-theme="seedling"] .navbar {
+  --bs-navbar-bg: var(--bs-body-bg);
   --bs-navbar-color: #1d2b1f;
   --bs-navbar-hover-color: #34a853;
 }
@@ -265,7 +273,7 @@
 .navbar .navbar-brand:hover,
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--bs-navbar-hover) !important;
+  color: var(--bs-navbar-hover-color) !important;
 }
 
 
