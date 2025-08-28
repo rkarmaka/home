@@ -773,3 +773,155 @@ body,
   transition: background .2s;
 }
 .btn-icon:hover{ background: var(--bs-body-bg-3); }
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+/* Mobile-first approach - default to single column */
+@media (max-width: 767px) {
+  /* Ensure all containers stack vertically */
+  .custom-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Make all level containers full width on mobile */
+  .level-1, .level-2, .level-3 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  /* Adjust padding for mobile */
+  .level-1 {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .level-2 {
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+  
+  .level-3 {
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+  
+  /* Ensure images are responsive on mobile */
+  .level-2 img {
+    max-height: 15rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .level-3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Profile image adjustments for mobile */
+  .rounded-circle {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* Typography adjustments for mobile */
+  .section-title {
+    font-size: 1.25rem;
+    padding-bottom: 6px;
+  }
+  
+  .blog-title {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.25rem;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  /* Social icons stack vertically on mobile */
+  .social-icons {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  /* Timeline adjustments for mobile */
+  .timeline {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  /* Button adjustments for mobile */
+  .btn-theme {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Navbar adjustments for mobile */
+  .navbar .navbar-brand,
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+  }
+  
+  /* Main body padding adjustment for mobile */
+  .main-body {
+    padding-top: 70px;
+  }
+  
+  /* Cover background adjustment for mobile */
+  .simple-cover-bg {
+    height: 100px;
+  }
+  
+  .level-1 img.rounded-circle {
+    margin-top: 20px;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .level-1 {
+    padding: 1.25rem;
+  }
+  
+  .level-2 {
+    padding: 1rem;
+  }
+  
+  .level-3 {
+    padding: 0.75rem;
+  }
+}
+
+/* Ensure desktop maintains multi-column layout */
+@media (min-width: 1024px) {
+  .custom-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .level-1 {
+    padding: 1.5rem;
+  }
+  
+  .level-2 {
+    padding: 1rem;
+  }
+  
+  .level-3 {
+    padding: 0.75rem;
+  }
+}
