@@ -1,47 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://rkarmaka.github.io/home/</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://web.address.of.your.nifty.website/</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/index.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://web.address.of.your.nifty.website/about.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/about.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://web.address.of.your.nifty.website/blogs.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/what-i-do.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://web.address.of.your.nifty.website/blogs_.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/research.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://web.address.of.your.nifty.website/googleff75ef6333d163ce.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/blogs.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://web.address.of.your.nifty.website/projects.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
 <url>
-  <loc>https://rkarmaka.github.io/home/blogs/llm-vs-strawberry.html</loc>
-  <lastmod>2025-08-29T18:38:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://web.address.of.your.nifty.website/research.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
 </url>
-
-
+<url>
+<loc>https://web.address.of.your.nifty.website/what-i-do.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
+</url>
+<url>
+<loc>https://web.address.of.your.nifty.website/blogs/llm-vs-strawberry.html</loc>
+<lastmod>2025-08-29T18:03:32-04:00</lastmod>
+</url>
 </urlset>
