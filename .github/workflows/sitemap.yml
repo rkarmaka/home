@@ -1,0 +1,26 @@
+name: Generate sitemap
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cicirello/generate-sitemap@v1
+        with:
+          base-url: https://rkarmaka.github.io/home
+          sitemap-format: xml
+          additional-extensions: html,htm
+      - name: Commit sitemap
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sitemap.xml
+          git commit -m "Add/Update sitemap.xml" || echo "No changes"
+          git push
