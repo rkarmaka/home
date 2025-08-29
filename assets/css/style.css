@@ -844,11 +844,20 @@ body,
     font-size: 1.1rem;
   }
   
-  /* Social icons stack vertically on mobile */
+  /* Social icons stay in row on mobile with wrapping */
   .social-icons {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    font-size: 1.3rem;
+    padding: 8px;
+    min-width: 40px;
+    text-align: center;
   }
   
   /* Timeline adjustments for mobile */
